@@ -3,6 +3,7 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="etc"/>
 	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.j2eedt.core.MYECLIPSE_JAVAEE_5_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/antlr-2.7.6.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/aopalliance.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/asm-3.3.jar"/>
@@ -14,7 +15,6 @@
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/cglib-nodep-2.1_3.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-collections-3.2.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-fileupload-1.2.2.jar"/>
-	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-io-2.0.1.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-lang-2.5.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-logging-1.1.1.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/dom4j-1.6.1.jar"/>
@@ -45,7 +45,6 @@
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.springframework.transaction-3.1.1.RELEASE.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.springframework.web-3.1.1.RELEASE.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/shiro-all-1.1.0.jar"/>
-	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/slf4j-api-1.6.1.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/struts2-convention-plugin-2.3.1.2.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/struts2-core-2.3.1.2.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/struts2-jfreechart-plugin-2.3.1.2.jar"/>
@@ -53,11 +52,16 @@
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/struts2-spring-plugin-2.3.1.2.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/xwork-core-2.3.1.2.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
-	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6">
 		<attributes>
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/apache-solr-core-3.6.2.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/apache-solr-solrj-3.6.2.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-codec-1.6.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-httpclient-3.1.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-io-2.1.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/jcl-over-slf4j-1.6.1.jar"/>
 	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
 </classpath>

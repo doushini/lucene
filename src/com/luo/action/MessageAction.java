@@ -1,8 +1,12 @@
 package com.luo.action;
 
+import java.io.File;
 import java.util.Date;
 import java.util.List;
 
+import javax.servlet.ServletContext;
+
+import org.apache.commons.io.FileUtils;
 import org.apache.struts2.convention.annotation.Action;
 import org.apache.struts2.convention.annotation.Namespace;
 import org.apache.struts2.convention.annotation.Result;
@@ -11,6 +15,7 @@ import org.springframework.context.annotation.Scope;
 
 import com.luo.pojo.Message;
 import com.luo.service.MessageService;
+import com.luo.util.PropertiesUtil;
 
 @Scope(value="prototype")
 @Namespace("/message")
@@ -22,6 +27,8 @@ public class MessageAction extends BaseAction{
 	private MessageService messageService;
 	private Message message;
 	private List<Message> messageList;
+	private File file;
+	private String fileFileName;
 	
 	
 	public Message getMessage() {
@@ -52,18 +59,38 @@ public class MessageAction extends BaseAction{
 		return SUCCESS;
 	}
 	
-	@Action(value="save")
-	@Override
+	@Action(value="saveMessage")
 	public String save() throws Exception {
 		message.setAddTime(new Date());
+		String path = request.getRealPath("/upload");
+		String fName=new Date().getTime()+fileFileName;
+		if(file!=null){
+			File f=new File(path,fName);
+			FileUtils.copyFile(file, f);//不是
+			message.setAttachUrl(f.getPath());
+		}
 		messageService.save(message);
 		return LIST;
 	}
 
-	@Override
 	public String del() throws Exception {
 		messageService.delete(message.getId());
 		return LIST;
 	}
 
+	public String getFileFileName() {
+		return fileFileName;
+	}
+
+	public void setFileFileName(String fileFileName) {
+		this.fileFileName = fileFileName;
+	}
+
+	public File getFile() {
+		return file;
+	}
+
+	public void setFile(File file) {
+		this.file = file;
+	}
 }

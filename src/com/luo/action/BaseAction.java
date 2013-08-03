@@ -42,8 +42,4 @@ public abstract class BaseAction extends ActionSupport implements ServletRequest
 		return list();
 	}
 	public abstract String list() throws Exception;
-	public abstract String save() throws Exception;
-	public abstract String del() throws Exception;
-	
-	
 }

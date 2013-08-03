@@ -20,7 +20,9 @@ public class Message {
 	private int id;
 	private String title;
 	private String content;
+	private String attachUrl;
 	private Date addTime;
+	
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -48,5 +50,12 @@ public class Message {
 	}
 	public void setAddTime(Date addTime) {
 		this.addTime = addTime;
+	}
+	@Column(name="attach_url")
+	public String getAttachUrl() {
+		return attachUrl;
+	}
+	public void setAttachUrl(String attachUrl) {
+		this.attachUrl = attachUrl;
 	}
 }

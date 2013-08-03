@@ -8,10 +8,11 @@
   </head>
   
   <body>
-   <form action="save.action" method="post">
-   	标题:<input type="text" name="message.title"/><br/>
-   	内容：<textarea rows="5" cols="20" name="message.content"></textarea>
-   	<input type="submit" value="Save"/>
+   <form action="saveMessage.action" method="post" enctype="multipart/form-data">
+   	标题: <input type="text" name="message.title"/><br/>
+   	内容：<textarea rows="5" cols="20" name="message.content"></textarea><br/>
+   	附件：<input type="file" name="file">
+   		 <input type="submit" value="Save"/>
    </form>
   </body>
 </html>
